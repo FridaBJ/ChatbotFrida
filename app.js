@@ -1,4 +1,4 @@
-const API_KEY = 'AQ.Ab8RN6JMKQq0STGAGkkFO9ypvtJPWFh01pivsyEgHdxr1UiPbw';
+const API_KEY = 'AQ.Ab8RN6J-umMdKbtgNRiwU0hUF6JExjLDrsoV_5ihF841bOmcWg';
 const URL_API = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse&key=${API_KEY}`;
 
 const ICONOS_IMAGENES = [
