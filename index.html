@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Frida</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="floating-toggle-btn" id="floatingToggle" onclick="toggleSidebar()" title="Mostrar menú">☰</button>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="new-chat-btn" onclick="crearNuevoChat()">＋ Nuevo Chat</button>
+            <button class="toggle-sidebar-btn" onclick="toggleSidebar()" title="Ocultar menú">✕</button>
+        </div>
+        <div class="chat-list" id="chatList"></div>
+    </div>
+
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Habla conmigo!</h2>
+                <div class="status-indicator">
+                    <div class="status-dot"></div> Conectada
+                </div>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages"></div>
+
+            <div class="chat-input-area">
+                <input type="text" id="userInput" placeholder="Escribe un mensaje..." autocomplete="off">
+                <button class="send-btn" id="sendBtn" onclick="enviarMensaje()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
